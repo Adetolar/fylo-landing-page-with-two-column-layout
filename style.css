@@ -1,0 +1,283 @@
+body {
+  font-family: Open Sans;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+:root {
+  --Dark-blue: hsl(243, 87%, 12%);
+  --blue: hsl(238, 22%, 44%);
+  --Bright-blue: hsl(224, 93%, 58%);
+  --Mblue: hsl(170, 45%, 43%);
+  --gray: hsl(0, 0%, 75%);
+  --greyblue: hsl(240, 75%, 98%);
+  --white:#FFFFFF;
+}
+
+header {
+  --font-12: 0.75rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  font-size: var(--font-12);
+}
+
+header img {
+  width: 80px;
+  height: 24;
+  display: block;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  margin: 5px;
+  font-family: Raleway;
+  font-weight: 400;
+}
+
+section {
+  text-align: center;
+}
+
+section.top img , section.middle img {
+  display: block;
+  margin: 80px auto 20px;
+  width: 70%;
+}
+
+section .container {
+  padding: 9px;
+}
+
+section .container2 {
+  padding: 26px;
+}
+
+h1 {
+  font-family: Raleway;
+  font-weight: 700;
+}
+
+section .container p {
+  font-size: 0.875rem;
+}
+
+input {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+button {
+  width: 90%;
+  padding: 12px 20px;
+  background-color: blue;
+  color: whitesmoke;
+  border-radius: 2px;
+  border: none;
+  font-family: Raleway;
+  font-weight: 700;
+}
+
+section.middle {
+  overflow: hidden;
+  position: relative;
+}
+
+section.middle::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 340px;
+  left: 50px;
+  background-color: var(--greyblue);
+  border-radius: 50%;
+  transform: scale(4);
+  z-index: -1;
+}
+
+section a {
+  /* display: inline; */
+  font-size: 0.75rem;
+  text-decoration: none;
+  padding: 3px 0px;
+  color: var(--Mblue);
+  border-bottom: 1px solid var(--Mblue);
+}
+
+h5 {
+  font-family: Raleway;
+  color: var(--Dark-blue);
+}
+
+section.middle p {
+  font-size: 0.875rem;
+  color: var(--blue);
+}
+
+section .container2 img {
+  width: 12px;
+  height: 12px;
+  margin: 0px;
+  display: inline;
+}
+
+section.middle .note {
+  box-shadow: 1px 1px 5px;
+  margin: 40px 20px;
+  text-align: left;
+  padding:10px 29px;
+}
+
+section.middle .container2 .note p{
+color: var(--Dark-blue);
+  font-size: 0.625rem;
+}
+
+
+.ceoContainer {
+  display: flex;
+  align-items: center;
+  
+}
+
+section .ceoContainer img{
+ display: block;
+ width: 10%;
+ height: 10%;
+ margin-right: 2px;
+ border-radius: 50%;
+}
+
+.ceoContainer p {
+  margin: 1px;
+  font-size: 0.5625rem;
+  font-weight: bold;
+}
+
+section.middle .container2 .ceoInfoContainer p:nth-child(2) {
+  font-size: 0.375rem;
+  font-weight: lighter;
+}
+
+section.bottom{
+  background-color: var(--blue);
+  
+}
+
+section.bottom p:first-child{
+  font-size: 1.125rem;
+  font-family: Raleway;
+  font-weight: bold;
+  color: var(--white);
+  padding: 40px 40px 10px;
+  margin-bottom: 0px;
+}
+
+section.bottom p:first-child+p{
+  color: var(--white);
+  padding: 10px 49px 10px;
+  font-size: 0.875rem;
+  margin-top: 0px;
+}
+
+section input {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px ;
+  border: none;
+  border-radius: 2px;
+}
+
+section button {
+  width: 60%;
+  padding: 12px 20px;
+  background-color: blue;
+  color: whitesmoke;
+  border-radius: 2px;
+  border: none;
+  font-family: Raleway;
+  font-weight: 700;
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 60px;
+}
+
+
+footer p {
+  color: white;
+}
+
+.ceoContainer img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: white;
+  
+}
+
+
+
+footer {
+  padding: 60px 20px;
+  background-color: hsl(243, 87%, 12%);
+}
+i{
+  margin-right: 20px;
+}
+
+
+
+footer img{
+  display: block;
+  width: 32%;
+}
+
+.fa-solid,
+.fa-regular {
+  color: white;
+}
+
+footer .linkContainer  a{
+  display: block;
+  margin: 15px;
+}
+
+
+
+footer .linkContainer  a:nth-child(5) {
+  margin-top: 40px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .iconContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.fa-brands {
+  margin: 10px;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+}
+
+footer .info {
+  font-size: 11px;
+  text-align: center;
+}
+footer .info a {
+  color: hsl(228, 45%, 44%);
+} */
