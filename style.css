@@ -43,7 +43,7 @@ body {
 }
 
 .logo {
-  width: 25%;
+  max-width: 25%;
 }
 
 nav a {
@@ -236,5 +236,85 @@ footer {
   color: var(--white);
 }
 
-@media screen and () {
+@media screen and (min-width: 48rem) {
+  nav a {
+    margin-right: 1.2em;
+    font-size: 1em;
+  }
+
+  .intro_section_container,
+  .section_2_infor_container {
+    flex-direction: row-reverse;
+    margin: 4.4em 0em;
+    text-align: left;
+  }
+
+  .intro_content h1 {
+    font-size: 1.5em;
+  }
+
+  .section_2_infor_container {
+    margin-top: 12em;
+  }
+
+  .intro_image,
+  .intro_content,
+  .Fylo_info-image,
+  .info_content-2 {
+    width: 48%;
+  }
+
+  .intro_content {
+    margin: auto 0em;
+  }
+
+  .info_content-2 p:first-child {
+    font-family: var(--ff-Heading);
+    font-weight: var(--fw-700);
+    font-size: 1.5em;
+    margin: 1.2em 0em;
+  }
+
+  .info_content-2 p {
+    margin: 1rem 0rem;
+  }
+
+  .Flyo_external_link {
+    margin-left: 0px;
+    display: inline;
+  }
+
+  .Kyle_quote_container {
+    margin-left: 0px;
+  }
+
+  .section_2 .Kyle_quote_container p:nth-child(1) {
+    margin: 0px;
+    font-size: 0.9em;
+  }
+
+  .bottom_content-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bottom_content,
+  .bottom_content-form {
+    width: 45%;
+    margin-top: 0px;
+    text-align: left;
+  }
+
+  .footer_links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .link {
+    margin: 0px;
+  }
+
+  .dev_info {
+    margin-top: 50px;
+  }
 }
