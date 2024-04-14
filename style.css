@@ -312,6 +312,23 @@ footer {
 
   .link {
     margin: 0px;
+    width: 100%;
+  }
+
+  .social-links {
+    display: flex;
+    justify-items: center;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .intro_content input {
+    display: inline;
+    min-width: 50%;
+    margin: 0.5em auto;
+    padding: 12px 20px;
+    border: 1px solid var(--Desaturated-blue);
+    border-radius: 2px;
   }
 
   .dev_info {
