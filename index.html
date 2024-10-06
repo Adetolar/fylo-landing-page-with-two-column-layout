@@ -20,110 +20,110 @@
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
   </head>
   <body>
-    <header>
-      <div class="header_container container row">
-        <img src="images/logo.svg" class="logo" alt="logo icon" />
-        <nav>
-          <a href="#">Features</a>
-          <a href="#">Team</a>
-          <a href="#">Sign In</a>
-        </nav>
-      </div>
-    </header>
+    <nav class="container">
+      <img src="/images/logo.svg" class="logo" alt="logo" />
+      <ul>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Sign In</a></li>
+      </ul>
+    </nav>
+
     <main>
-      <div class="main_container container">
-        <section>
-          <div class="intro_section_container row">
-            <img
-              src="/images/illustration-1.svg"
-              class="intro_image"
-              alt="Fylo_intro-image-1"
-            />
+      <section class="intro">
+        <div class="hero">
+          <img
+            src="/images/illustration-1.svg"
+            class="intro_image"
+            alt="Fylo_intro-image-1"
+          />
 
-            <div class="intro_content">
-              <h1>
-                All your files in one secure location, accessible anywhere.
-              </h1>
+          <div class="intro_content container">
+            <h1>All your files in one secure location, accessible anywhere.</h1>
 
-              <p>
-                Fylo stores your most important files in one secure location.
-                Access them wherever you need, share and collaborate with
-                friends, family, and co-workers.
-              </p>
+            <p>
+              Fylo stores your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends,
+              family, and co-workers.
+            </p>
 
-              <form action="#">
+            <form action="#">
+              <div>
                 <label for="email"></label>
                 <input
                   type="email"
                   id="email"
                   placeholder="Enter your email.."
                 />
-
-                <input
-                  type="submit"
-                  class="btn_get-started"
-                  value="Get Started"
-                />
-              </form>
-            </div>
-          </div>
-        </section>
-
-        <section class="section_2">
-          <div class="section_2_infor_container row">
-            <img
-              src="images/illustration-2.svg"
-              class="Fylo_info-image"
-              alt="Fylo-infor Image"
-            />
-
-            <div class="info_content-2">
-              <p>Stay productive, wherever you are</p>
-              <p>
-                Never let location be an issue when accessing your files. Fylo
-                has you covered for all of your file storage needs.
-              </p>
-
-              <p>
-                Securely share files and folders with friends, family and
-                colleagues for live collaboration. No email attachments
-                required!
-              </p>
-              <div class="Flyo_external_link">
-                <a href="#"
-                  >See how Fylo works
-                  <img src="/images/icon-arrow.svg" alt="fylo external link"
-                /></a>
               </div>
+              <div>
+                <button type="submit"  id="btn-1" class="btn">Get Started</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
 
-              <div class="Kyle_quote_container">
-                <img src="/images/icon-quotes.svg" alt="" />
-                <p>
-                  Fylo has improved our team productivity by an order of
-                  magnitude. Since making the switch our team has become a
-                  well-oiled collaboration machine.
-                </p>
-                <div class="Kyle_Profile">
-                  <img
-                    src="/images/avatar-testimonial.jpg"
-                    class="Kyle_picture"
-                    alt="Kyle Burton's picture"
-                  />
-                  <div class="Kyle_info">
-                    <p>Kyle Burton</p>
-                    <p>Founder & CEO, Huddle</p>
-                  </div>
+      <section class="section_mid">
+        <div class="sectionMid-wrapper container">
+          <img
+            src="images/illustration-2.svg"
+            class="Fylo_info-image"
+            alt="Fylo-infor Image"
+          />
+
+          <div class="sectionMid_content">
+            <h2>Stay productive, wherever you are</h2>
+            <p>
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+
+            <p>
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required!
+            </p>
+            <div class="Flyo_external_link">
+              <a href="#"
+                >See how Fylo works
+                <img src="/images/icon-arrow.svg" alt="fylo external link"
+              /></a>
+            </div>
+
+            <div class="Kyle_quote">
+              <img
+                src="/images/icon-quotes.svg"
+                alt="quotation mark"
+                class="quotation"
+              />
+              <p class="qoute">
+                Fylo has improved our team productivity by an order of
+                magnitude. Since making the switch our team has become a
+                well-oiled collaboration machine.
+              </p>
+
+              <div class="Kyle_Profile">
+                <img
+                  src="/images/avatar-testimonial.jpg"
+                  class="Kyle_picture"
+                  alt="Kyle Burton's picture"
+                />
+                <div class="Kyle_info">
+                  <p class="name">Kyle Burton</p>
+                  <p>Founder & CEO, Huddle</p>
                 </div>
               </div>
+              </div>
+              
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <section class="bottom">
-        <div class="bottom_content-container container">
+        <div class="bottom-wrapper">
           <div class="bottom_content">
-            <p>Get early access today</p>
+            <p class="heading">Get early access today</p>
 
             <p>
               It only takes a minute to sign up and our free starter tier is
@@ -131,16 +131,19 @@
               would be happy to help you.
             </p>
           </div>
-          <div class="bottom_content-form">
-            <form action="#">
-              <label for="email"></label>
-              <input type="email" id="email" placeholder="enter your email.." />
-              <br />
-              <input
-                type="submit"
-                class="btn_get-started"
-                value="Get Started For Free"
-              />
+          <div class="bottom_form">
+            <form action="#" id="bottom_form">
+              <div>
+                <label for="email"></label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email.."
+                />
+              </div>
+              <div>
+                <button type="submit" class="btn">Get Started For Free</button>
+              </div>
             </form>
           </div>
         </div>
@@ -184,7 +187,7 @@
           </div>
 
           <div class="dev_info">
-            <p>
+           
               Challenge by
               <a
                 href="https://www.frontendmentor.io?ref=challenge"
@@ -194,8 +197,8 @@
               Coded by
               <a href="https://www.frontendmentor.io/profile/Adetolar"
                 >Adetolar</a
-              >.
-            </p>
+              >
+            
           </div>
         </div>
       </footer>

@@ -18,16 +18,386 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Open Sans;
+  font-size: 0.875em;
+  font-weight: 400;
+}
+
 img {
   max-width: 100%;
 }
 
-body {
-  font-family: Open Sans;
-  font-size: 1em;
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+  /* border: 1px solid red; */
+}
+
+.logo {
+  width: 10%;
+}
+
+ul {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0px auto;
+  width: 90%;
+  max-width: 1280px;
+}
+
+.intro {
+  /* border: 1px solid green; */
+}
+
+.hero {
+  padding-top: 70px;
+}
+
+.intro_content {
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+
+h1 + p {
+  padding: 20px 0px;
+  font-size: medium;
+}
+
+#email,
+.btn {
+  width: 90%;
+  margin: 7px 0px;
+}
+
+#email {
+  padding: 10px;
+}
+
+.btn {
+  padding: 10px;
+  background: var(--Bright-blue);
+  border: none;
+  color: var(--white);
   font-weight: 400;
 }
 
+.sectionMid-wrapper {
+  margin-top: 100px;
+  background: var(--Grayish-Blue);
+}
+
+.sectionMid_content {
+  font-size: medium;
+  text-align: center;
+}
+
+.sectionMid_content p {
+  color: var(--Desaturated-blue);
+  margin: 20px 0px;
+}
+
+.Flyo_external_link a {
+  display: block;
+  color: var(--Moderate-Cyan);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.Kyle_quote {
+  width: 280px;
+  /* border: 1px solid black; */
+  padding: 20px;
+  margin: 0px auto 50px;
+  text-align: left;
+  background-color: var(--white);
+}
+
+.qoute {
+  line-height: 1.6;
+}
+
+.sectionMid_content .quote {
+  width: 5%;
+}
+
+.Kyle_quote :nth-child(2) {
+  font-size: smaller;
+  margin: 0px;
+}
+
+.Kyle_Profile {
+  /* border: 1px solid red; */
+  display: flex;
+  margin-top: 10px;
+}
+
+.Kyle_picture {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.Kyle_info {
+  /* border: 1px solid yellow; */
+  padding-left: 10px;
+}
+
+.Kyle_info p {
+  font-size: xx-small;
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+}
+
+.Kyle_Profile .name {
+  color: var(--Dark-blue);
+  font-weight: bolder;
+}
+
+.bottom {
+  background: var(--Desaturated-blue);
+}
+
+.bottom-wrapper {
+  text-align: center;
+  padding: 0px 40px;
+  margin: 0px auto;
+}
+
+.bottom_content {
+  color: var(--white);
+}
+
+.heading {
+  font-family: var(--ff-Heading);
+  font-weight: 700;
+  padding: 50px 0px 0px;
+}
+
+.heading + p {
+  font-size: smaller;
+  padding: 20px 0px;
+}
+
+#bottom_form {
+  padding-bottom: 50px;
+  /* font-size: xx-small; */
+}
+
+.btn:hover {
+  background-color: #6c9bff;
+}
+
+footer {
+  background-color: var(--Dark-blue);
+}
+
+.footer_container {
+  margin-top: 0px;
+}
+
+.logo-bottom {
+  margin: 2em 0em;
+  width: 32%;
+}
+.footer_links {
+  color: var(--white);
+}
+
+.fa-solid,
+.fa-regular {
+  color: white;
+  margin: 20px 20px 5px 0px;
+}
+.footer_link-2 a,
+.footer_link-3 a {
+  display: block;
+  margin-top: 10px;
+  color: var(--white);
+  text-decoration: none;
+}
+.footer_link-3 {
+  margin-top: 40px;
+}
+
+.footer_link-4 {
+  text-align: center;
+  margin: 1.5em auto;
+}
+
+.social-links a {
+  margin-right: 2em;
+  padding: 5px 10px;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+}
+.fa-brands {
+  color: var(--white);
+}
+
+.dev_info {
+  text-align: center;
+  color: var(--white);
+}
+
+.dev_info a {
+  color: var(--white);
+}
+
+footer a:hover {
+  color: var(--Bright-blue);
+}
+
+@media screen and (min-width: 48rem) {
+  .hero,
+  .sectionMid-wrapper {
+    display: flex;
+    /* border: 1px solid red; */
+    align-items: center;
+    max-width: 1280px;
+    max-height: 474px;
+  }
+
+  .hero,
+  .sectionMid-wrapper {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    text-align: left;
+    margin: 0px auto;
+  }
+
+  h1,
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700px;
+  }
+
+  h1 + p {
+    font-weight: 400;
+    font-size: larger;
+  }
+
+  .section_mid {
+    margin: 200px 0px;
+  }
+
+  .intro_content,
+  .sectionMid_content {
+    text-align: left;
+    padding-right: 100px;
+    /* border: 1px solid green; */
+  }
+
+  .Flyo_external_link a .Flyo_external_link {
+    text-align: left;
+  }
+
+  .intro_image,
+  .Fylo_info-image {
+    display: block;
+    width: 40%;
+  }
+
+  .Kyle_quote {
+    margin: 0px;
+  }
+
+  form {
+    display: inline-flex;
+    /* border: 1px solid red; */
+    width: 90%;
+    gap: 20px;
+  }
+
+  #email {
+    width: 320px;
+  }
+
+  #btn-1 {
+    width: 200px;
+  }
+
+  .bottom-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .bottom-wrapper {
+    max-width: 1280px;
+    text-align: left;
+    padding: 50px 0px;
+  }
+
+  .bottom_content {
+    width: 40%;
+  }
+  .heading {
+    font-size: xx-large;
+  }
+
+  .heading + p {
+    font-size: 1rem;
+  }
+
+  #bottom_form {
+    display: block;
+    padding: 0px;
+  }
+
+  .footer_links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer_container {
+    padding-top: 50px;
+  }
+
+  .logo-bottom {
+    width: 10%;
+  }
+
+  .link {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .social-links {
+    display: flex;
+    justify-items: center;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .intro_content input {
+    display: inline;
+    min-width: 50%;
+    margin: 0.5em auto;
+    padding: 12px 20px;
+    border: 1px solid var(--Desaturated-blue);
+    border-radius: 2px;
+  }
+
+  .dev_info {
+    margin-top: 50px;
+  }
+}
+/*
 .container {
   max-width: 90%;
   margin: 30px auto;
@@ -60,25 +430,7 @@ nav a {
   text-align: center;
 }
 
-/* .Fylo_info-image{
-  margin-top: 40px;
 
-} */
-
-/* background need fixing */
-
-/* .section_2::before{
-
-  content:"";
-  display: block;
-  height: 600px;
-  inset: 0;
-  z-index: -1;
-  background: var(--Grayish-Blue);
-  border: 1px solid red;
-  
- 
-} */
 
 .intro_content h1 {
   font-weight: 700;
@@ -334,4 +686,4 @@ footer {
   .dev_info {
     margin-top: 50px;
   }
-}
+} */
